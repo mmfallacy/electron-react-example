@@ -188,6 +188,14 @@ Your app is ready to be deployed!
 
 See the section about [deployment](#deployment) for more information.
 
+### `npm run e-build`
+
+
+
+Builds the electron app for production to the `dist` folder.<br>
+It packs the Electron app in distributable mode as specified in the` package.json`
+
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**

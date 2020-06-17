@@ -12,8 +12,8 @@ function createWindow() {
     webPreferences: { webSecurity: false},
     frame: false,
   });
-
-  mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
+  console.log(__dirname)
+  mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../src/index.html')}`);
   mainWindow.webContents.openDevTools({mode:'detach'})
   mainWindow.on('closed', () => mainWindow = null);
 
